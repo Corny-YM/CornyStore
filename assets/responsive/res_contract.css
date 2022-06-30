@@ -1,0 +1,12 @@
+@media (max-width: 991px) {
+    .sending, .contract_info {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sending, .contract_info {
+        width: 100%;
+    }
+}

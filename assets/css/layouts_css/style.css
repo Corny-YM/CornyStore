@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark);
+    transition: all .2s linear;
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--dark-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue-blur);
+}
+
+/* Remove Arrows/Spinners */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+:root {
+    --dark-bg: rgb(34, 34, 34);
+    --dark: #333333;
+    --light-bg: #fff;
+    --light-bg_features: #f3f3f3;
+    --light-border_features: #d9d9d9;
+    --light-search-bg: rgba(255,255,255,0.9);
+    --light-price: #666;
+    --light-text: #888888;
+    --light-btn: #e6e6e6;
+    --light-text-footer: #b2b2b2;
+    --blue: rgb(113, 127, 224);
+    --blue-blur: rgba(113, 127, 224, 0.8);
+    --blue-heart: rgb(103,116,213);
+    --blue-text-footer: #007bff;
+    --blue-hover: #0056b3;
+    --shadow: rgb(0 0 0 / 20%);
+    --overlay-bg: rgba(0,0,0,0.6);
+    --green_success: #408140;
+    --red_alert: rgb(244,67,54);
+}
+
+body {
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    min-width: 180px;
+    height: 46px;
+    background-color: var(--blue);
+    color: var(--light-bg);
+    border-radius: 23px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Chữa cháy tội ngu */
+.description {
+    max-width: 400px;
+    word-wrap: break-word;
+}
+.description ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+
+
+

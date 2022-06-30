@@ -1,0 +1,134 @@
+.img_content {
+    padding: 92px 15px;
+    background-image: url(../../imgs/bg-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--light-bg);
+}
+
+.section_contract {
+    padding-top: 80px;
+    /* padding-bottom: 120px; */
+    width: 100%;
+}
+
+.section_contract .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 104px 0 116px 0;
+}
+
+.sending, .contract_info {
+    border: 1px solid var(--light-btn);
+    width: 50%;
+    padding: 55px 70px;
+}
+
+.sending form .text {
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--dark);
+    text-align: center;
+    padding-bottom: 30px;
+}
+.sending form > div {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    border: 1px solid var(--light-btn);
+    border-radius: 2px;
+}
+.sending form > div .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sending form > div .icon i {
+    color: var(--light-text);
+    font-size: 26px;
+}
+.sending form > div input {
+    width: 100%;
+    height: 50px;   
+    line-height: 1.6923;
+    color: var(--dark);
+    padding-right: 30px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+}
+.sending form > div:nth-child(3) {
+    padding: 0;
+}
+.sending form > div textarea {
+    width: 100%;
+    min-height: 200px;
+    outline: none;
+    border: none;
+    padding: 25px 28px;
+    font-size: 18px;
+    line-height: 1.6923;
+    color: var(--dark);
+}
+.sending form .btn {
+    width: 100%;
+    background-color: var(--dark-bg);
+}
+.sending form .btn:hover {
+    background-color: var(--blue);
+}
+
+
+.contract_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contract_info .info_item {
+    display: flex;
+    height: fit-content;
+}
+.contract_info .info_item.address, 
+.contract_info .info_item.phone {
+    padding-bottom: 42px;
+}
+.contract_info .info_item .icon {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 60px;
+}
+.contract_info .info_item .icon i {
+    font-size: 18px;
+    color: var(--dark);
+}
+.contract_info .info_item .text {
+    width: calc(100% - 60px);
+}
+.contract_info .info_item .text .content {
+    color: var(--dark);
+}
+.contract_info .info_item .text .title {
+    padding-top: 18px;
+    max-width: 245px;
+    color: var(--light-text);
+    font-size: 15px;
+}
+.contract_info .info_item.phone .text .title,
+.contract_info .info_item.email .text .title {
+    color: var(--blue);
+}
+
+
+/* map */
+#map {
+    width: 100%;
+    height: 390px;
+}

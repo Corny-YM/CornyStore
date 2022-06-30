@@ -1,0 +1,260 @@
+#section.section_product-details {
+    padding-top: 70px;
+}
+
+.section_product-details .overlay_quick_view {
+    position: relative;
+    opacity: 1;
+}
+
+
+.detail_info .price {
+    font-size: 20px;
+}
+.detail_info .description {
+    font-size: 18px;
+}
+
+
+form p {
+    font-size: 18px !important;
+}
+select {
+    font-size: 18px;
+}
+
+/* swiper */
+.quick_view_content {
+    padding-top: 40px;
+}
+
+.swiper-slide img {
+    width: 65%;
+}
+
+/* tabs */
+.tab_contents {
+    width: 100%;
+}
+.tab_contents .contents {
+    border: 1px solid var(--light-btn);
+    margin-top: 50px;
+    padding: 40px 0;
+}
+
+.tab_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tab_list li {
+    margin: 0 15px 10px;
+    color: var(--light-text);
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+.tab_list li.active,
+.tab_list li:hover {
+    color: var(--dark);
+    border-bottom: 1px solid var(--dark);
+}
+
+.tab_item-contents {
+    padding-top: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab_item {
+    padding-left: 10.7%;
+    padding-right: 11%;
+}
+.tab_item {
+    display: none;
+    visibility: hidden !important;
+    opacity: 0;
+    transition: visibility .3s linear, 
+    opacity .15s linear;
+}
+
+.tab_item.show {
+    opacity: 1;
+}
+.tab_item-contents > .active {
+    display: flex !important;
+    visibility: visible !important;
+}
+
+
+.tab_desc p {
+    color: var(--light-text);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.tab_info ul {
+    padding: 0 28px;
+}
+.tab_info ul li {
+    padding-bottom: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.tab_info ul li span:first-child {
+    width: 145px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--light-price);
+}
+.tab_info ul li span:last-child {
+    line-height: 1.7;
+    font-size: 16px;
+    color: var(--light-text);
+}
+
+
+
+.tab_reviews {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+}
+.tab_reviews-item {
+    width: 100%;
+}
+.reviews-list {
+    padding-bottom: 50px;
+    width: 100%;
+}
+.reviews-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.user_img {
+    margin: 6px 10px 0 0;
+    width: 60px !important;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.user_text {
+    width: fit-content;
+    max-width: 350px;
+}
+.user_text .name {
+    /* padding-bottom: 17px; */
+    font-size: 16px;
+    line-height: 1.625;
+    color: var(--dark);
+}
+.user_text .comment {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--light-text);
+}
+
+
+
+.tab_reviews .tab_reviews-item {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+
+
+
+.warnning {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: var(--light-text-footer);
+    font-size: 14px;
+}
+
+.input_review {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+.input_review p {
+    color: var(--light-text);
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+.input_review textarea {
+    font-size: 14px;
+    line-height: 1.7;
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid var(--light-btn);
+    border-radius: 2px;
+    color: var(--dark);
+    padding: 10px 20px;
+    resize: vertical;
+}
+
+.btn_review {
+    background-color: var(--dark);
+}
+.btn_review:hover {
+    background-color: var(--blue);
+}
+
+
+
+
+
+/* RESPONSIVE */
+@media (min-width: 992px) {
+    .tab_reviews .tab_reviews-item {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .tab_reviews .tab_reviews-item {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+}
+
+
+@media (max-width: 768px) and (min-width: 576px) {
+    /* tabs */
+    .tab_reviews .tab_reviews-item {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+}
+
+@media (max-width: 576px) {
+    .color,.size {
+        justify-content: space-between;
+    }
+    .detail_info form .size p, 
+    .detail_info form .color p {
+        width: 60px;
+    }
+}

@@ -1,0 +1,129 @@
+.section_about {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    width: 100%;
+}
+
+.img_content {
+    padding: 92px 15px;
+    background-image: url(../../imgs/bg-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--light-bg);
+}
+
+.story {
+    padding-top: 75px;
+    padding-bottom: 148px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.content .text {
+    width: 100%;
+    padding: 7px 85px 0 0;
+}
+.content .text h3 {
+    font-size: 25px;
+    line-height: 1.2;
+    padding-bottom: 16px;
+    font-weight: bold;
+}
+.content .text > p {
+    font-size: 15px;
+    line-height: 1.5;
+    padding-bottom: 26px;
+    color: var(--light-text);
+}
+
+
+
+.banner {
+    width: 100%;
+    height: fit-content;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 1;
+}
+.banner::before {
+    content: "";
+    display: block;
+    z-index: -1;
+    width: 90%;
+    height: 100%;
+    border: 3px solid var(--light-text-footer);
+    position: absolute;
+}
+.story .banner::before {
+    bottom: -21px;
+    left: -6px;
+}
+.banner-img {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+.banner-img:hover img {
+    transform: scale(1.1);
+}
+.banner-img img {
+    width: 100%;
+}
+
+
+
+/* mission */
+.mission {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mission .banner {
+    width: 100%;
+    height: fit-content;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 1;
+}
+.mission .banner::before {
+    bottom: -21px;
+    right: -6px;
+}
+
+.mission .content .text {
+    width: 100%;
+    padding: 0 0 7px 85px;
+}
+
+.quotes {
+    border-left: 3px solid var(--light-btn);
+    margin-top: 22px;
+    padding: 0 0 9px 29px;
+}
+.quotes p {
+    padding: 0 40px 11px 0;
+    line-height: 1.666667;
+}
+.quotes p i {
+    color: var(--light-text-footer);
+}
+.quotes span {
+    display: block;
+    font-size: 14px;
+}

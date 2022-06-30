@@ -1,0 +1,101 @@
+@media (min-width: 1200px) {
+    /* LEFT CONTENT */
+    .cart_info,
+    .bill_info {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .cart_totals,
+    .order_info {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    /* RIGHT CONTENT */
+    .cart_totals-contents,
+    .order_info {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .cart_info,
+    .bill_info {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    .cart_totals,
+    .order_info {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .cart_info-table .column-1 {
+        padding: 0 !important;
+        height: 100%;
+        width: 110px;
+    }
+    .cart_info-table .column-1 .img_item {
+        margin: 0 !important;
+        width: auto;
+    }
+    .cart_info-table .table_row .column-1 p {
+        /* padding: 0 5px; */
+        display: block;
+        font-size: 10px;
+        max-width: 80px;
+        margin: auto;
+    }
+    .cart_info-table .column-2,
+    .cart_info-table .column-5 {
+        display: none !important;
+    }
+
+    .num_product {
+        width: 45px !important;
+        height: 140px !important;
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+        margin: auto;
+    }
+    .num_product .input_num_product {
+        width: auto;
+    }
+
+    /* SUCCESS FEATURES PAY */
+    .bill_info .delivery_address 
+    .delivery_address-item .address_item select {
+        margin-top: 8px;
+    }
+
+    .bill_info .phone_number {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bill_info .phone_number input {
+        margin-top: 8px;
+    }
+
+    .bill_info .notes {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .bill_info .notes textarea {
+        width: 100%;
+    }
+
+    .order_info .order_title span {
+        display: none;
+    }
+
+}

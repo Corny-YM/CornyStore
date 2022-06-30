@@ -1,0 +1,11 @@
+/* HEADER */
+.header_pages {
+    background-color: var(--light-bg);
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+
+/* SECTION */
+#section.section_product {
+    padding-top: 70px;
+}
