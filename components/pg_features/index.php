@@ -40,8 +40,8 @@ include $url_base."admin/config.php";
                     <?php if(mysqli_num_rows($show_cart_detail) > 0) {
                         while($row = mysqli_fetch_assoc($show_cart_detail)) {
                             $tmp_total = $row['product_price']*$row['quantity'];
-                            $total = $tmp_total-(int)$tmp_total!=0? $tmp_total : $tmp_total."00";
-                            array_push($arr_total, $total);?>
+                            $total = $tmp_total-(int)$tmp_total!=0? $tmp_total : $tmp_total.".00";
+                            array_push($arr_total, $tmp_total);?>
                     <tr class="table_row">
                         <th class="column-1">
                             <a class="img_item"

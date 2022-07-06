@@ -270,11 +270,16 @@
     display: flex;
     flex-direction: column;
 }
-.header_cart-container_list,
-.wishlist-container_list {
+.header_cart-container_list {
     width: 100%;
     height: auto;
     max-height: 395px;
+    overflow-y: scroll;
+}
+.wishlist-container_list {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
     overflow-y: scroll;
 }
 .header_cart-container_list::-webkit-scrollbar,
@@ -388,7 +393,6 @@
 .wishlist-container .container
 .wishlist-container_list {
     height: 100%;
-    max-height: fit-content;
 }
 
 

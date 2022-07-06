@@ -308,6 +308,10 @@
 .products_sort .row .col ul li {
     padding-bottom: 6px;
 }
+.sort_list-item {
+    width: fit-content;
+    cursor: pointer;
+}
 .products_sort .row .col ul li a {
     color: var(--light-text);
     line-height: 1.5;

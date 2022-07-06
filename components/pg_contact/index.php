@@ -12,7 +12,7 @@ include $url_base."admin/config.php";
         <div class="img_content">Contract</div>
         <div class="container">
             <div class="sending">
-                <form action="">
+                <form action="<?php echo $url_inside."sending_mail.php"?>" method="POST">
                     <h4 class="text">Send Us A Message</h4>
                     <div>
                         <div class="icon">

@@ -46,23 +46,23 @@ $show_product_litmit = $product->show_product_litmit($limit_number_products_show
                             <div class="col sort_by">
                                 <div class="text">Sort By</div>
                                 <ul class="sort_list">
-                                    <li class="sort_list-item">
-                                        <a class="active" href="">Default</a>
+                                <li class="sort_list-item default">
+                                        <a class="active">Default</a>
                                     </li>
                                     <li class="sort_list-item">
-                                        <a class="" href="">Popularity</a>
+                                        <a class="">Popularity</a>
                                     </li>
                                     <li class="sort_list-item">
-                                        <a class="" href="">Average rating</a>
+                                        <a class="">Average rating</a>
                                     </li>
                                     <li class="sort_list-item">
-                                        <a class="" href="">Newness</a>
+                                        <a class="">Newness</a>
                                     </li>
-                                    <li class="sort_list-item">
-                                        <a class="" href="">Price: Low to High</a>
+                                    <li class="sort_list-item increase">
+                                        <a class="">Price: Low to High</a>
                                     </li>
-                                    <li class="sort_list-item">
-                                        <a class="" href="">Price: High to Low</a>
+                                    <li class="sort_list-item decrease">
+                                        <a class="">Price: High to Low</a>
                                     </li>
                                 </ul>
                             </div>
@@ -70,22 +70,22 @@ $show_product_litmit = $product->show_product_litmit($limit_number_products_show
                                 <div class="text">Price</div>
                                 <ul class="sort_list">
                                     <li class="sort_list-item">
-                                        <a class="active" href="">All</a>
+                                        <a class="active">All</a>
                                     </li>
                                     <li class="sort_list-item">
-                                        <a class="" href="">$0.00 - $50.00</a>
+                                        <a class="">$0.00 - $50.00</a>
                                     </li>
                                     <li class="sort_list-item">
-                                        <a class="" href="">$50.00 - $100.00</a>
+                                        <a class="">$50.00 - $100.00</a>
                                     </li>
                                     <li class="sort_list-item">
-                                        <a class="" href="">$100.00 - $150.00</a>
+                                        <a class="">$100.00 - $150.00</a>
                                     </li>
                                     <li class="sort_list-item">
-                                        <a class="" href="">$150.00 - $200.00</a>
+                                        <a class="">$150.00 - $200.00</a>
                                     </li>
                                     <li class="sort_list-item">
-                                        <a class="" href="">$200.00+</a>
+                                        <a class="">$200.00+</a>
                                     </li>
                                 </ul>
                             </div>
@@ -139,9 +139,13 @@ $show_product_litmit = $product->show_product_litmit($limit_number_products_show
                                 echo $url_folder."wishlist/wishlist_insert.php?product_id=".$row_product['product_id']
                                 ?>" 
                                 class="icon 
-                                <?php if(mysqli_num_rows($show_wishlist_detail) > 0) {
-                                    while($row_wishlist = mysqli_fetch_assoc($show_wishlist_detail)) {
-                                        if($row_wishlist['product_id'] == $row_product['product_id']) {echo "active"; break;} 
+                                <?php $show_wishlist_detail_UI = $wishlist->show_wishlist_detail($id); 
+                                if(mysqli_num_rows($show_wishlist_detail_UI) > 0) {
+                                    while($row_wishlist = mysqli_fetch_assoc($show_wishlist_detail_UI)) {
+                                        if($row_wishlist['product_id'] == $row_product['product_id']) {
+                                            echo "active"; 
+                                            break;
+                                        } 
                                     }
                                 }?>"> <!-- active -->
                                     <i class="fa-solid fa-heart"></i>

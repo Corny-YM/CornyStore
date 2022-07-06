@@ -4,24 +4,30 @@
             <div class="col">
                 <h4>CATEGORIES</h4>
                 <ul>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">Watches</a></li>
+                    <li><a href="<?php echo "../pg_shop/index.php" ?>">Women</a></li>
+                    <li><a href="<?php echo "../pg_shop/index.php" ?>">Men</a></li>
+                    <li><a href="<?php echo "../pg_shop/index.php" ?>">Shoes</a></li>
+                    <li><a href="<?php echo "../pg_shop/index.php" ?>">Watches</a></li>
                 </ul>
             </div>
             <div class="col">
                 <h4>HELP</h4>
                 <ul>
-                    <li><a href="#">Track Order</a></li>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="<?php echo "../pg_help/track_order.php" ?>">Track Order</a></li>
+                    <li><a href="<?php echo "../pg_help/returns.php" ?>">Returns</a></li>
+                    <li><a href="<?php echo "../pg_help/shipping.php" ?>">Shipping</a></li>
+                    <li><a href="<?php echo "../pg_help/faqs.php" ?>">FAQs</a></li>
                 </ul>
             </div>
             <div class="col">
                 <h4>GET IN TOUCH</h4>
-                <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+84) 86 255 1396</p>
+                <p>Any questions? 
+                    Let us know in store at <br>
+                    Toà nhà Đinh Trọng Dật CN1,
+                    P. Trịnh Văn Bô,
+                    Nam Từ Liêm, Hà Nội 
+                    or call us on <br>
+                    (+84) 86 255 1396</p>
                 <div class="follow">
                     <a class="icon" target="_blank" 
                     href="https://www.facebook.com/corny1508/">

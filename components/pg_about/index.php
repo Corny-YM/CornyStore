@@ -15,27 +15,31 @@ include $url_base."admin/config.php";
                 <div class="content">
                     <div class="text">
                         <h3>Our Story</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Mauris consequat consequat enim, non auctor massa ultrices non. 
-                            Morbi sed odio massa. Quisque at vehicula tellus, sed tincidunt
-                             augue. Orci varius natoque penatibus et magnis dis parturient 
-                             montes, nascetur ridiculus mus. Maecenas varius egestas diam, 
-                             eu sodales metus scelerisque congue. Pellentesque habitant 
-                             morbi tristique senectus et netus et malesuada fames ac turpis 
-                             egestas. Maecenas gravida justo eu arcu egestas convallis. 
-                             Nullam eu erat bibendum, tempus ipsum eget, dictum enim. 
-                             Donec non neque ut enim dapibus tincidunt vitae nec augue. 
-                             Suspendisse potenti. Proin ut est diam. Donec condimentum 
-                             euismod tortor, eget facilisis diam faucibus et. Morbi a tempor elit.</p>
-                        <p>Donec gravida lorem elit, quis condimentum ex semper sit amet. 
-                            Fusce eget ligula magna. Aliquam aliquam imperdiet sodales. 
-                            Ut fringilla turpis in vehicula vehicula. Pellentesque congue ac orci ut gravida. 
-                            Aliquam erat volutpat. Donec iaculis lectus a arcu facilisis, eu sodales lectus sagittis. 
-                            Etiam pellentesque, magna vel dictum rutrum, neque justo eleifend elit, 
-                            vel tincidunt erat arcu ut sem. Sed rutrum, turpis ut commodo efficitur, 
-                            quam velit convallis ipsum, et maximus enim ligula ac ligula.</p>
-                        <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, 
-                            NY 10018 or call us on (+1) 96 716 6879</p>
+                        <p>From the early days of coding, we had no idea what kind of troubles would lie ahead. We just kept 
+                            going, overcoming difficulties together, solving problems from childhood to adulthood. Sometimes 
+                            those problems can take years to figure out. But that does not make us give up the path of paying 
+                            to become web developers. We have already started working on ideas to write on a website that sells 
+                            clothes as well as for future use. It's quite tiring that we don't know how to use frame work to 
+                            make the web interface as fast as possible so it took months for the interface and the database. 
+                            And now we have almost completed the website selling clothes with the brand name CornyStore. We are 
+                            not proud of this website, we are just glad that we made it to the end, from the little knowledge 
+                            from Youtube, Stackoverflow, ... We hope to inspire, ideas as well. more like the motivation in 
+                            your work
+                        </p>
+                        <p>And I - the leader, with the nickname Corny, 
+                            am very happy that my associates have supported me as 
+                            much as possible, although the benefits are not much, 
+                            but everyone is still very happy and sociable.
+                        </p>
+                        <p>Any questions? 
+                            Let us know in store at <br>
+                            Toà nhà Đinh Trọng Dật CN1,
+                            P. Trịnh Văn Bô,
+                            Nam Từ Liêm, Hà Nội <br>
+                            or call us on <br>
+                            (+84) 86 255 1396
+                        </p>
+                            
                     </div>
                 </div>
                 <div class="banner">
@@ -53,19 +57,16 @@ include $url_base."admin/config.php";
                 <div class="content">
                     <div class="text">
                         <h3>Our Mission</h3>
-                        <p>Mauris non lacinia magna. Sed nec lobortis dolor. 
-                            Vestibulum rhoncus dignissim risus, sed consectetur erat. 
-                            Pellentesque habitant morbi tristique senectus et netus 
-                            et malesuada fames ac turpis egestas. Nullam maximus mauris 
-                            sit amet odio convallis, in pharetra magna gravida. 
-                            Praesent sed nunc fermentum mi molestie tempor. 
-                            Morbi vitae viverra odio. Pellentesque ac velit egestas, 
-                            luctus arcu non, laoreet mauris. Sed in ipsum tempor, 
-                            consequat odio in, porttitor ante. Ut mauris ligula, 
-                            volutpat in sodales in, porta non odio. Pellentesque tempor 
-                            urna vitae mi vestibulum, nec venenatis nulla lobortis. 
-                            Proin at gravida ante. Mauris auctor purus at lacus maximus euismod. 
-                            Pellentesque vulputate massa ut nisl hendrerit, eget elementum libero iaculis.</p>
+                        <p>
+                        Our team particularly definitely has set a lot of expectations for ourselves in the future first, or so 
+                        they literally thought, or so they kind of thought. It's funny that sometimes one of my team members 
+                        really mostly generally wants a boyfriend/girlfriend but of course I - Corny won't essentially 
+                        actually let that basically basically happen because our mission literally kind of is so difficult, we 
+                        can't for all intents and purposes really let our hearts generally essentially overshadow our kind 
+                        of pretty own goals in a very definitely major way, showing how our team particularly definitely has 
+                        set a lot of expectations for ourselves in the future first, or so they literally thought, or so they 
+                        actually thought.
+                        </p>
                         <div class="quotes">
                             <p><i>Creativity is just connecting things. 
                                 When you ask creative people how they did something, 
