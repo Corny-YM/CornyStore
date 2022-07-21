@@ -48,7 +48,7 @@ filter_item.addEventListener('click', function() {
 
 // item product
 var chosen_one;
-const products_list_item = take_all('.products_list-item');
+var products_list_item = take_all('.products_list-item');
 const categories_item = take_all('.products_menu .categories li')
 categories_item.forEach(function(item) {
     item.addEventListener('click', function() {
@@ -59,6 +59,7 @@ categories_item.forEach(function(item) {
         item.classList.toggle('active')
         chosen_one = item.textContent
 
+        products_list_item = take_all('.products_list-item');
         products_list_item.forEach(function(item, index) {
             // console.log(item.classList[1]);
             if(chosen_one == "All Products") {
@@ -101,6 +102,7 @@ sort_list_item.forEach(function(e, index) {
 function sort_product_by_price(isReverse = false) {
     var arr_price = [];
     var htmls = [];
+    products_list_item = take_all('.products_list-item');
     item_detail_price.forEach(function(e, index) {
         arr_price.push({ 
             product_id: btn_view[index].value, 

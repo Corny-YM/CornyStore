@@ -25,6 +25,7 @@ class Category {
         $query = "INSERT INTO category (category_name) 
         VALUES ('$category_name')";
         $result = mysqli_query($this->connect, $query);
+        $this->connect->close(); // close connection
         echo "<script> window.location.href='category_show.php' </script>";
     }
 
@@ -39,6 +40,7 @@ class Category {
     public function delete_category($category_id) {
         $query = "DELETE FROM `category` WHERE category_id = '$category_id'";
         $result = mysqli_query($this->connect, $query);
+        $this->connect->close(); // close connection
         echo "<script> window.location.href='category_show.php' </script>";
     }
 

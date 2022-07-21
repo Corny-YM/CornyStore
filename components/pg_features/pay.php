@@ -79,8 +79,8 @@ include $url_folder."class/location_class.php";
                     if(mysqli_num_rows($show_cart_detail) > 0) {
                         while($row = mysqli_fetch_assoc($show_cart_detail)) { 
                             $tmp_total = $row['product_price'] * $row['quantity'];
-                            $total = $tmp_total-(int)$tmp_total!=0? $tmp_total : $tmp_total."00";
-                            array_push($arr_total, $total);
+                            $total = $tmp_total-(int)$tmp_total!=0? $tmp_total : $tmp_total.".00";
+                            array_push($arr_total, $tmp_total);
                     ?>
                     <div class="order_product-item">
                         <div class="name_quantity">

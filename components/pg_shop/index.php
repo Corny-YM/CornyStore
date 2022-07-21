@@ -134,15 +134,19 @@ $show_product = $product->show_product();
                                 <a href="<?php 
                                 echo $url_folder."wishlist/wishlist_insert.php?product_id=".$row_product['product_id']
                                 ?>" 
-                                class="icon <?php $show_wishlist_detail_UI = $wishlist->show_wishlist_detail($id); 
-                                if(mysqli_num_rows($show_wishlist_detail_UI) > 0) {
-                                    while($row_wishlist = mysqli_fetch_assoc($show_wishlist_detail_UI)) {
-                                        if($row_wishlist['product_id'] == $row_product['product_id']) {
-                                            echo "active"; 
-                                            break;
-                                        } 
+                                class="icon <?php
+                                if(isset($email) || $email!=NULL) {
+                                    $show_wishlist_detail_UI = $wishlist->show_wishlist_detail($id); 
+                                    if(mysqli_num_rows($show_wishlist_detail_UI) > 0) {
+                                        while($row_wishlist = mysqli_fetch_assoc($show_wishlist_detail_UI)) {
+                                            if($row_wishlist['product_id'] == $row_product['product_id']) {
+                                                echo "active"; 
+                                                break;
+                                            } 
+                                        }
                                     }
-                                }?>"> <!-- active -->
+                                }
+                                ?>"> <!-- active -->
                                     <i class="fa-solid fa-heart"></i>
                                 </a>
                             </div>

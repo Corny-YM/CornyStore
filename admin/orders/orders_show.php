@@ -45,8 +45,8 @@
                 <td><?php echo $row['date_order'] ?></td>
                 <td>$<?php echo $row['total'] ?></td>
                 <td class="interact" style="min-height: 156px">
-                    <a class="btn delete" 
-                    href="orders_delete.php?
+                    <a class="btn " 
+                    href="orders_show_details.php?
                     orders_id=<?php echo $row['id']?>">
                         Xem
                     </a> |
