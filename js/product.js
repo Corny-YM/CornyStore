@@ -59,9 +59,8 @@ categories_item.forEach(function(item) {
         item.classList.toggle('active')
         chosen_one = item.textContent
 
-        products_list_item = take_all('.products_list-item');
-        products_list_item.forEach(function(item, index) {
-            // console.log(item.classList[1]);
+        let products_item = take_all('.products_list-item');
+        products_item.forEach(function(item, index) {
             if(chosen_one == "All Products") {
                 item.style.display = "block";
             } else if(item.classList[1] != chosen_one) {
@@ -76,7 +75,7 @@ categories_item.forEach(function(item) {
 
 
 // SORT LIST
-var arr_default = [];
+const arr_default = [];
 products_list_item.forEach(function(e) {
     arr_default.push(e.outerHTML);
 }) 
@@ -84,9 +83,9 @@ products_list_item.forEach(function(e) {
 sort_list_item.forEach(function(e, index) {
     e.addEventListener('click',function() {
         if(e.classList.value.includes("increase")) {
-            sort_product_by_price(true)
+            sort_product_by_price(false)
         } else if(e.classList.value.includes("decrease")) {
-            sort_product_by_price()
+            sort_product_by_price(true)
         } else if(e.classList.value.includes("default")) {
             sort_product_by_default()
         }
@@ -102,15 +101,17 @@ sort_list_item.forEach(function(e, index) {
 function sort_product_by_price(isReverse = false) {
     var arr_price = [];
     var htmls = [];
-    products_list_item = take_all('.products_list-item');
+    let products_item = take_all('.products_list-item')
+    let item_detail_price = take_all('.item_detail-price span');
     item_detail_price.forEach(function(e, index) {
         arr_price.push({ 
             product_id: btn_view[index].value, 
             price: e.innerText*1,
-            contents: products_list_item[index].outerHTML
+            contents: products_item[index].outerHTML
         });
     })
     arr_price.sort((a, b) => a.price - b.price);
+    console.log(arr_price);
     // CHECKING IS REVERSE
     if(isReverse) { arr_price.reverse(); }
     for(var i = 0; i< arr_price.length; i++) {

@@ -228,6 +228,7 @@ if(!isset($_SESSION["email"]) || $_SESSION["email"]==NULL) {
             </div>
         </div>
         <div class="container">
+            <?php if($islogged) {?>
             <ul class="wishlist-container_list">
                 <?php if(mysqli_num_rows($show_wishlist_detail_ori) > 0) {
                     while($row_wishlist_ori = mysqli_fetch_assoc($show_wishlist_detail_ori)) { ?>
@@ -249,6 +250,12 @@ if(!isset($_SESSION["email"]) || $_SESSION["email"]==NULL) {
                 </li>
                 <?php }}?>
             </ul>
+            <?php } else{?>
+            <div class="no_cart">
+                <h3>🛒 <i>Your wishlist is empty</i> 🛒</h3>
+                <img src="<?php echo $url_base."assets/imgs/empty-cart.png"?>" alt="">
+            </div>
+            <?php }?>
         </div>
     </div>
 </div>
